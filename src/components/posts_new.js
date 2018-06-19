@@ -14,6 +14,7 @@ class PostsNew extends Component {
                 // onBlur={field.input.onBlur}
                     {...field.input}
                 />
+                {field.meta.error}
             </div>
         )
     }
