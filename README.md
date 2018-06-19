@@ -1,25 +1,13 @@
-# ReduxSimpleStarter
+# BlogBank
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+A react application using react-route-dom library, using API back end
 
-### Getting Started
-
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+### installation guide
 
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
+> Fork the repo
+> git clone the repo
+> cd blogBank
 > npm install
 > npm start
 ```
