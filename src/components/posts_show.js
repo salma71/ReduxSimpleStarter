@@ -1,11 +1,14 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {fetchPost} from '../actions'
+import {Link} from 'react-router-dom'
 
 class PostsShow extends Component {
     componentDidMount() {
-        const {id} = this.props.match.params; // provided directly from react router
-        this.props.fetchPost(id);
+        // if(!this.props.post) {
+            const {id} = this.props.match.params; // provided directly from react router
+            this.props.fetchPost(id);
+        // }
     }
     render() {
         const {post} = this.props
@@ -17,9 +20,10 @@ class PostsShow extends Component {
         return (
             <div>
                 {/* #PostShowPage */}
-                <h3>{post.title}</h3>
-                <h6>{post.categories}</h6>
-                <p>{post.content}</p>
+                <Link to="/" className="btn btn-primary">Back to Index</Link>
+                <h3>Title: {post.title}</h3>
+                <h6>Category: {post.categories}</h6>
+                <p>Content: {post.content}</p>
             </div>
         )
     }
