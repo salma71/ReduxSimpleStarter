@@ -14,12 +14,12 @@ class PostsNew extends Component {
                 // onBlur={field.input.onBlur}
                     {...field.input}
                 />
-                {field.meta.error}
+                {field.meta.touched ? field.meta.error : ''}
             </div>
         )
     }
     onSubmit(values) {
-        console.log(values)
+        // console.log(values)
     }
     render() {
         const {handleSubmit} = this.props;
