@@ -18,9 +18,13 @@ class PostsNew extends Component {
             </div>
         )
     }
+    onSubmit(values) {
+        console.log(values)
+    }
     render() {
+        const {handleSubmit} = this.props;
         return(
-            <form>
+            <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 {/* this Field component is used to represent the distinct input that
 will be visible on screen to our users */}
                 <Field 
@@ -38,6 +42,7 @@ will be visible on screen to our users */}
                     name="content"
                     component={this.renderField} //takes a function
                 />
+                <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         )
     }
